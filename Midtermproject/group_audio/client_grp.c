@@ -78,7 +78,7 @@ int main(int argc, char const *argv[]) {
 
     int group_Id = response.groupId;
     printf("%d %d\n", connectionId, group_Id);
-    struct Connection connection = {.sd = sd, .clientName = argv[3]};
+    struct Connection connection = {.sd = sd, .clientName = (char *)argv[3]};
     CALL(pthread_create(&receiver_thread, NULL, receive_voice_messages,
                         (void *)&connection),
          "Receiver thread");
