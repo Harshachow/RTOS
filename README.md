@@ -1,11 +1,11 @@
 # RTOS
 assignment 1
-run the following commands 
-gcc server.c -o server -lpthread
-./server 1 8000
-open another terminal 
-gcc client.c -o client -lpthread
-./client 2 127.0.0.1 8000
+run the following commands                         
+gcc server.c -o server -lpthread                       
+./server 1 8000                          
+open another terminal                                       
+gcc client.c -o client -lpthread              
+./client 2 127.0.0.1 8000                  
 
 for group chat
 gcc group_server.c -o server -lpthread
