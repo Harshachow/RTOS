@@ -26,4 +26,4 @@ for group audio
 gcc server_grp.c -o server -lpulse-simple -lpulse -lpthread
 ./server 8002
 gcc client_grp.c -o client -lpulse-simple -lpulse -lpthread
-./client 127.0.0.1 8888 Harsha group
+./client 127.0.0.1 8002 Harsha group
